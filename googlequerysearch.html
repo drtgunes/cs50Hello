@@ -3,33 +3,36 @@
     <head>
         <title>Google Query Search</title>
         <style>
+            #positionrigth {
+                text-align: right;
+            }
+
             div {
                text-align: center;
-                             
-                
+
             }
             #foo {
                 font-size: 16px;
                 border-radius: 25px;
                 border: 1px solid #dfdcdc;
-                padding: 20px; 
+                padding: 20px;
                 width: 550px;
-                height: 8px;    
+                height: 8px;   
 
             }
 
             #foo:hover {
                 box-shadow: 0 0 7px #c0bfbf;
                 border: 0px;
-                
+
             }
 
             .aligncenter {
                 text-align: center;
                 margin-top: 155px;
             }
-            
-            #baz {                              
+
+            #baz {                             
                 font-size: 14px;
                 border-radius: 5px;
                 border: 0px;
@@ -41,25 +44,45 @@
                 border: 1px solid  #c0bfbf;
             }
 
+            .position {
+                position: relative;
+                text-align: center;
+                top: 20px;
+               
+                
+            }
+
         </style>
     </head>
     <body>
-        
+        <p id="positionrigth">
+            <a href="googleimagesearch.html">Images</a>
+            &nbsp;&nbsp;
+            <a href="googleadvancedsearch.html">Advanced Search</a>
+        </p>        
+
         <p class="aligncenter">
             <img src="googlelogo.png" alt="centered image" width="270px"/>
         </p>
-       
-        
+
+
         <div>
             <form action="https://www.google.com/search">
-                <input  id="foo" type="text" name="q">
-                <br>
-                <br>
+                <div>
+                    <input  id="foo" type="text" name="q">
+                </div>
                 
-                <input id="baz" type="submit" value="Google Search" >
-                <input id="baz" type="submit" value="I'm feeling lucky">
+                <br>
+                <br>
+                <div class="position">
+                    <input id="baz" type="submit" name"bntK" value="Google Search">
+                    <input id="baz" type="submit" name="btnI" value="I'm feeling lucky" formaction="https://google.com/search?q=AMD&btnI=1">
+                    
+                </div>
+
+               
             </form>
-       
+
         </div>
 
     </body>
